@@ -1,0 +1,197 @@
+/**
+* You can edit this whole file.
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --gray-0: #000000;
+  --gray-1: #222222;
+  --gray-2: #dddddd;
+  --gray-3: #fbfbfb;
+  --gray-4: #ffffff;
+  --primary: #8a2be2;
+  --secondary: #20d397;
+  --font-size-1: 1.5rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1rem;
+  --font-weight-thin: 300;
+  --font-weight-bold: 600;
+  --font-weight-heavy: 800;
+  --spacer-1: .25rem;
+  --spacer-2: .5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 2rem;
+  --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.44;
+}
+/* Header styles */
+header{
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  padding-bottom: var(--spacer-1);
+} 
+.logo img{
+  height: 35px;
+}
+h2.nombre{
+  font-weight: var(--font-weight-heavy);
+  font-size: var(--font-size-3);
+  color: var(--gray-4);
+  margin-left: var(--spacer-3);
+}
+.title_container{
+  display: flex;
+  justify-content:center;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+h1{
+  text-align: left;
+  width: 69rem;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-1);
+  color: var(--gray-0);
+  margin: var(--spacer-4) var(--spacer-3);
+  
+}
+
+nav li{
+  display: inline-block;
+  margin-right: var(--spacer-3);
+  color: var(--gray-4);
+  font-weight: var(--font-weight-heavy);
+  font-size: var(--font-size-3);
+}
+nav a {
+  text-decoration: none;
+  color: var(--gray-4);
+  position: relative;
+}
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--gray-4);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+  width: 100%;
+}
+/* Pets section styles */
+.Pets{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--spacer-5);
+  margin: var(--spacer-5);
+}
+.Text_frame {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 22rem;
+  height: 450px;
+  background-color: var(--gray-4);
+  padding: var(--spacer-3);
+  border: 1px solid var(--gray-2);
+  box-shadow: var(--shadows);
+  min-width: 260px;
+}
+.Text_frame p{
+padding-top: var(--spacer-3);
+ padding-bottom: var(--spacer-1);
+}
+.Text_frame h2{
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-2);
+  align-self: flex-start;
+}
+
+.Text_frame img{
+  padding-right: var(--spacer-2);
+  height: 1rem;
+}
+.button{
+  display: flex;
+  position: absolute;
+  padding: var(--spacer-2);
+  margin: var(--spacer-3);
+  width: 95%;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--gray-4);
+  font-weight: 600;
+  font-size: var(--font-size-3);
+  text-decoration: none;
+  bottom: 0;
+}
+.button:hover {
+  background-color: var(--secondary);
+  color: var(--gray-4);
+}
+
+@media (max-width: 768px) {
+
+  .Pets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacer-5);
+    margin: var(--spacer-5);
+    
+  }
+
+  .Text_frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-4);
+    padding: var(--spacer-3);
+    border: 1px solid var(--gray-2);
+    box-shadow: var(--shadows);
+    width: auto;
+    max-width: 500px;
+    min-width: 350px;
+  }
+
+}
+@media (min-width: 800) and (max-width:1439px) {
+
+}
+@media (min-width: 800) and (max-width:1439px) {
+
+}
+
+
+
+
